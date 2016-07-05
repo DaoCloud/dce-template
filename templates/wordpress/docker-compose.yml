@@ -1,0 +1,12 @@
+wordpress: 
+  image: daocloud.io/wordpress:latest
+  links: 
+    - db:mysql 
+  ports: 
+    - "80" 
+  restart: unless-stopped 
+db: 
+  image: daocloud.io/mysql:latest 
+  environment: 
+    - MYSQL_ROOT_PASSWORD={{ mysql_root_password }}
+  restart: unless-stopped

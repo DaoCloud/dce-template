@@ -1,0 +1,5 @@
+game2048:
+  image: daocloud.io/daocloud/dao-2048:latest
+  ports:
+  - 80
+  restart: unless-stopped

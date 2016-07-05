@@ -1,0 +1,14 @@
+name: wordpress
+description: |
+  WordPress is a free and open source blogging tool
+category: Application
+url: https://hub.docker.com/_/wordpress
+arguments:
+  - id: mysql_root_password
+    description: "The Root Password of MySQL"
+    name: "Root Password"
+    type: "string"
+    required: true
+    default: "root"
+
+
